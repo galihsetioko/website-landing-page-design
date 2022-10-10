@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid black; */
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container-nav {
+    width: 100%;
+    margin: auto;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 50px ;
+    align-items: center;
+    /* border: 2px solid black; */
+    color: rgb(233, 233, 233);
+    /* background-color: green; */
+}
+.brand {
+    /* flex-basis: 1; */
+}
+nav ul{
+    
+    width: 56%;
+    /* width: 68%; */
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: black; */
+    list-style-type: none;
+}
+nav ul li a {
+    
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+}
+nav ol {
+    width: 60px;
+    list-style: none;
+    flex-basis: 1;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+.point {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border:1px solid rgb(255, 255, 255);
+}
+
+
+
+/* Header tag Style */
+header {
+    text-align: center;
+    background-image: url(../img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    /* width: 100vw; */
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.gradient-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+.gradient-background h2 {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.gradient-background #link-header{
+    color: rgb(74, 74, 255);
+    width: 40%;
+    font-size: 16px;
+    margin: 15px auto;
+}
+.gradient-background p {
+    color: white;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+}
+.gradient-background ul {
+    display: flex;
+    /* min-width: 40%; */
+    width: 46%;
+    justify-content: space-around;
+    margin: 20px auto;
+    list-style-type: none;
+    /* border: 2px solid red; */
+}
+.gradient-background ul li a{
+    display: block;
+    text-decoration: none;
+    width:160px;
+    padding: 9px 0;
+    background-color: rgb(23, 116, 255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.gradient-background ul li a:hover {
+    background-color: rgb(8, 102, 243);
+}
+
+
+
+/* Main Content Style Here */
+
+main {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+main h2, .container-on h2 {
+    font-size: 23px;
+    font-weight: lighter;
+    margin: 25px 0 0;
+}
+main p, .container-on p {
+    margin:6px 0 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto 70px auto;
+    justify-content: space-around;
+}
+.box-1 {
+    width: 200px;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+.logo-box {
+    margin: 0 auto 5px auto;
+    width: 25px;
+    height:25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.box-1 a {
+    width: 65%;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background-color: rgb(23, 116, 255);
+
+}
+#box-title {
+    color: rgb(23, 116, 255);
+}
+
+
+/* container on */
+
+.container-on {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.container-on-content {
+    display:flex;
+    margin: 100px auto;
+}
+.container-on-content-2 {
+    width: 50%;
+    text-align: left;
+}
+.container-image {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    /* border: 2px solid black; */
+}
+.container-on-content-2 p:first-child {
+    color: rgb(23, 116, 255);
+}
+.container-on-content-2 p:nth-child(2) {
+    margin: 6px 0 30px 0;
+}
+.container-on-content-2 a  {
+    padding: 7px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgb(23, 116, 255);
+    color: white;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+
+
+/* Breakpoint Responsive */
+
+
+@media screen and (max-width:768px) {
+    
+    nav ul {
+        width:60%;
+        justify-content: right;
+    }
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav ol, nav ul li:nth-child(3), nav ul li:nth-child(4) {
+        display: none;
+    }
+    .gradient-background h2 {
+        font-size: 35px;
+        width: 80%;
+    }
+    .gradient-background #link-header {
+        width: 50%;
+        font-size: 15px;
+    }
+    .gradient-background p {
+        width:70%;
+        font-size: 15px;
+    }
+    .gradient-background ul li a {
+        font-size: 15px;
+    }
+    .box {
+        justify-content: space-evenly;
+    }
+    .box-1 {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width:576px) {
+    nav {
+        background-color: rgb(8, 102, 243);
+    }
+    .gradient-background h2 {
+        font-size: 30px;
+        width: 80%;
+    }
+    .gradient-background #link-header {
+        width: 65%;
+        font-size: 14px;
+    }
+    .gradient-background p {
+        width:80%;
+        font-size: 14px;
+    }
+    .gradient-background ul li a {
+        font-size: 15px;
+    }
+    .box-1 {
+        width: 70%;
+        margin: 10px 0;
+    }
+    .container-on-content {
+        flex-wrap: wrap;
+    }
+    .container-on-content-2 {
+        width: 100%;
+        text-align: center;
+    }
+    .container-image {
+        margin: 60px 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
